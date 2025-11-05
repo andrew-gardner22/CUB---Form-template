@@ -86,7 +86,7 @@
     <form id="dinnerForm" novalidate>
       <!-- Name -->
       <div class="field">
-        <label class="title" for="nameInput">Name <span class="required">*</span></label>
+        <label class="title" for="nameInput">Guest #1  <span class="required">*</span></label>
         <input id="nameInput" name="name" type="text" placeholder="First and last name" required />
         <div class="error" id="err-name" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
       </div>
@@ -98,19 +98,24 @@
           <label class="choice"><input type="radio" name="entree1" value="CHICKEN CORDON BLEU"> <div><div style="font-weight:600">CHICKEN CORDON BLEU</div><div class="desc">Breaded chicken breast stuffed with ham & Swiss. Vegetables, mashed potatoes.</div></div></label>
           <label class="choice"><input type="radio" name="entree1" value="PAN SEARED COHO SALMON"> <div><div style="font-weight:600">PAN SEARED COHO SALMON</div><div class="desc">Seared salmon with pesto. Vegetables, Yukon gold mash.</div></div></label>
           <label class="choice"><input type="radio" name="entree1" value="TENDERLOIN OF BEEF"> <div><div style="font-weight:600">TENDERLOIN OF BEEF</div><div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree1" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA</div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
+          <label class="choice"><input type="radio" name="entree1" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA<span style="color:#b85a00"> — Limited Option</span></div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
         </div>
         <div class="error" id="err-entree1" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
       </div>
 
       <!-- ENTRÉE #2 -->
+           <div class="field">
+        <label class="title" for="nameInput">Guest #2 <span style="color:#b85a00">— Optional</span></label>
+        <input id="nameInput" name="name" type="text" placeholder="First and last name" required />
+        <div class="error" id="err-name" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
+      </div>
       <div class="field">
         <div class="title">Entree #2</div>
         <div class="choices">
           <label class="choice"><input type="radio" name="entree2" value="CHICKEN CORDON BLEU"> <div><div style="font-weight:600">CHICKEN CORDON BLEU</div><div class="desc">Breaded chicken breast stuffed with ham & Swiss. Vegetables, mashed potatoes.</div></div></label>
           <label class="choice"><input type="radio" name="entree2" value="PAN SEARED COHO SALMON"> <div><div style="font-weight:600">PAN SEARED COHO SALMON</div><div class="desc">Seared salmon with pesto. Vegetables, Yukon gold mash.</div></div></label>
           <label class="choice"><input type="radio" name="entree2" value="TENDERLOIN OF BEEF"> <div><div style="font-weight:600">TENDERLOIN OF BEEF</div><div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree2" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA</div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
+          <label class="choice"><input type="radio" name="entree2" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA <span style="color:#b85a00">— Limited Option</span></div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
         </div>
         <div class="error" id="err-entree2" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
       </div>
