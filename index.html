@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -35,7 +36,7 @@
       box-sizing:border-box;
     }
     header{display:flex;gap:12px;align-items:center;margin-bottom:18px}
-
+    
     /* LOGO */
     .logo {
       width:100px;
@@ -47,7 +48,7 @@
       background-repeat: no-repeat;
       color: transparent;
     }
-
+    
     h1{margin:0;font-size:20px}
     p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
     form{margin-top:16px;display:flex;flex-direction:column;gap:var(--gap)}
@@ -65,20 +66,22 @@
     button.primary{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
     button.ghost{background:transparent;border:1px solid #e6eef8;padding:10px 14px;border-radius:10px;cursor:pointer}
     .status{font-size:14px;margin-top:8px}
-
+    
     @media (max-width:560px){
       .logo{width:48px;height:48px}
       h1{font-size:18px}
     }
   </style>
 </head>
+
 <body>
   <main class="card" role="main" aria-labelledby="formTitle">
     <header>
       <div class="logo"></div>
       <div>
         <h1 id="formTitle">Dinner Selections — CUB</h1>
-        <p class="lead">All plated dinners include starter salad, rolls, and choice of coffee/tea.</p>
+        <p class="lead">All plated dinners include starter salad, rolls, and
+          choice of coffee/tea.</p>
         <p class="hint">This form is not affiliated with Microsoft.</p>
       </div>
     </header>
@@ -86,44 +89,122 @@
     <form id="dinnerForm" novalidate>
       <!-- Name -->
       <div class="field">
-        <label class="title" for="nameInput">Guest #1  <span class="required">*</span></label>
-        <input id="nameInput" name="name" type="text" placeholder="First and last name" required />
-        <div class="error" id="err-name" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
+        <label class="title" for="nameInput">Guest #1 <span
+            class="required">*</span></label>
+        <input id="nameInput" name="name" type="text"
+          placeholder="First and last name" required />
+        <div class="error" id="err-name"
+          style="display:none;color:#b91c1c;font-size:13px;margin-top:8px">
+        </div>
       </div>
 
       <!-- ENTRÉE #1 -->
       <div class="field">
         <div class="title">Entree #1 <span class="required">*</span></div>
         <div class="choices">
-          <label class="choice"><input type="radio" name="entree1" value="CHICKEN CORDON BLEU"> <div><div style="font-weight:600">CHICKEN CORDON BLEU</div><div class="desc">Breaded chicken breast stuffed with ham & Swiss. Vegetables, mashed potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree1" value="PAN SEARED COHO SALMON"> <div><div style="font-weight:600">PAN SEARED COHO SALMON</div><div class="desc">Seared salmon with pesto. Vegetables, Yukon gold mash.</div></div></label>
-          <label class="choice"><input type="radio" name="entree1" value="TENDERLOIN OF BEEF"> <div><div style="font-weight:600">TENDERLOIN OF BEEF</div><div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree1" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA<span style="color:#b85a00"> — Limited Option</span></div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
+          <label class="choice"><input type="radio" name="entree1"
+              value="CHICKEN CORDON BLEU">
+            <div>
+              <div style="font-weight:600">CHICKEN CORDON BLEU</div>
+              <div class="desc">Breaded chicken breast stuffed with ham & Swiss.
+                Vegetables, mashed potatoes.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree1"
+              value="PAN SEARED COHO SALMON">
+            <div>
+              <div style="font-weight:600">PAN SEARED COHO SALMON</div>
+              <div class="desc">Seared salmon with pesto. Vegetables, Yukon gold
+                mash.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree1"
+              value="TENDERLOIN OF BEEF">
+            <div>
+              <div style="font-weight:600">TENDERLOIN OF BEEF</div>
+              <div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess
+                potatoes.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree1"
+              value="VEGETARIAN LASAGNA">
+            <div>
+              <div style="font-weight:600">VEGETARIAN LASAGNA<span
+                  style="color:#b85a00"> — Limited Option</span></div>
+              <div class="desc">Butternut squash, spinach, pesto, ricotta,
+                mozzarella.</div>
+            </div>
+          </label>
         </div>
-        <div class="error" id="err-entree1" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
+        <div class="error" id="err-entree1"
+          style="display:none;color:#b91c1c;font-size:13px;margin-top:8px">
+        </div>
       </div>
 
       <!-- ENTRÉE #2 -->
-           <div class="field">
-        <label class="title" for="nameInput">Guest #2 <span style="color:#b85a00">— Optional</span></label>
-        <input id="nameInput" name="name" type="text" placeholder="First and last name" required />
-        <div class="error" id="err-name" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
+      <div class="field">
+        <label class="title" for="nameInput">Guest #2 <span
+            style="color:#b85a00">— Optional</span></label>
+        <input id="nameInput" name="name" type="text"
+          placeholder="First and last name" required />
+        <div class="error" id="err-name"
+          style="display:none;color:#b91c1c;font-size:13px;margin-top:8px">
+        </div>
       </div>
       <div class="field">
         <div class="title">Entree #2</div>
         <div class="choices">
-          <label class="choice"><input type="radio" name="entree2" value="CHICKEN CORDON BLEU"> <div><div style="font-weight:600">CHICKEN CORDON BLEU</div><div class="desc">Breaded chicken breast stuffed with ham & Swiss. Vegetables, mashed potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree2" value="PAN SEARED COHO SALMON"> <div><div style="font-weight:600">PAN SEARED COHO SALMON</div><div class="desc">Seared salmon with pesto. Vegetables, Yukon gold mash.</div></div></label>
-          <label class="choice"><input type="radio" name="entree2" value="TENDERLOIN OF BEEF"> <div><div style="font-weight:600">TENDERLOIN OF BEEF</div><div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess potatoes.</div></div></label>
-          <label class="choice"><input type="radio" name="entree2" value="VEGETARIAN LASAGNA"> <div><div style="font-weight:600">VEGETARIAN LASAGNA <span style="color:#b85a00">— Limited Option</span></div><div class="desc">Butternut squash, spinach, pesto, ricotta, mozzarella.</div></div></label>
+          <label class="choice"><input type="radio" name="entree2"
+              value="NONE">
+            <div>
+              <div style="font-weight:600">N/A</div>
+            </div>
+          </label><label class="choice"><input type="radio" name="entree2"
+              value="CHICKEN CORDON BLEU">
+            <div>
+              <div style="font-weight:600">CHICKEN CORDON BLEU</div>
+              <div class="desc">Breaded chicken breast stuffed with ham & Swiss.
+                Vegetables, mashed potatoes.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree2"
+              value="PAN SEARED COHO SALMON">
+            <div>
+              <div style="font-weight:600">PAN SEARED COHO SALMON</div>
+              <div class="desc">Seared salmon with pesto. Vegetables, Yukon gold
+                mash.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree2"
+              value="TENDERLOIN OF BEEF">
+            <div>
+              <div style="font-weight:600">TENDERLOIN OF BEEF</div>
+              <div class="desc">Beef tenderloin, demi-glaze, mushrooms. Duchess
+                potatoes.</div>
+            </div>
+          </label>
+          <label class="choice"><input type="radio" name="entree2"
+              value="VEGETARIAN LASAGNA">
+            <div>
+              <div style="font-weight:600">VEGETARIAN LASAGNA <span
+                  style="color:#b85a00">— Limited Option</span></div>
+              <div class="desc">Butternut squash, spinach, pesto, ricotta,
+                mozzarella.</div>
+            </div>
+          </label>
+
         </div>
-        <div class="error" id="err-entree2" style="display:none;color:#b91c1c;font-size:13px;margin-top:8px"></div>
+        <div class="error" id="err-entree2"
+          style="display:none;color:#b91c1c;font-size:13px;margin-top:8px">
+        </div>
       </div>
 
       <!-- Special requests -->
       <div class="field">
-        <label class="title" for="specialInput">Special requests / dietary restrictions</label>
-        <textarea id="specialInput" name="specialRequests" rows="4" placeholder="Allergies, dietary needs, seating requests, etc."></textarea>
+        <label class="title" for="specialInput">Special requests / dietary
+          restrictions</label>
+        <textarea id="specialInput" name="specialRequests" rows="4"
+          placeholder="Allergies, dietary needs, seating requests, etc."></textarea>
       </div>
 
       <!-- Hidden data -->
@@ -145,7 +226,7 @@
     const form = document.getElementById('dinnerForm');
     const submitBtn = document.getElementById('submitBtn');
     const statusEl = document.getElementById('status');
-
+    
     function showError(id, msg){
       const el = document.getElementById(id);
       el.style.display = 'block';
@@ -157,36 +238,36 @@
       document.getElementById('err-entree2').style.display = 'none';
       statusEl.style.display = 'none';
     }
-
+    
     function validate(){
       clearErrors();
       let ok = true;
-
+    
       const name = document.getElementById('nameInput').value.trim();
       if(!name){ showError('err-name','Name is required.'); ok = false; }
-
+    
       const entree1 = [...document.getElementsByName('entree1')].some(e => e.checked);
       const entree2 = [...document.getElementsByName('entree2')].some(e => e.checked);
-
+    
       if(!entree1){ showError('err-entree1','Select an entrée for #1.'); ok = false; }
       if(!entree2){ showError('err-entree2','Select an entrée for #2.'); ok = false; }
-
+    
       return ok;
     }
-
+    
     form.addEventListener('submit', async e => {
       e.preventDefault();
       if(!validate()) return;
-
+    
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
       document.getElementById('submittedAt').value = new Date().toISOString();
-
+    
       const fd = new FormData(form);
-
+    
       try{
         const res = await fetch(ENDPOINT, { method:'POST', body:fd, headers:{'Accept':'application/json'} });
-
+    
         if(res.ok){
           statusEl.style.display = 'block';
           statusEl.style.color = 'green';
@@ -202,15 +283,16 @@
         statusEl.style.color = '#b91c1c';
         statusEl.textContent = 'Network error.';
       }
-
+    
       submitBtn.disabled = false;
       submitBtn.textContent = 'Submit';
     });
-
+    
     document.getElementById('resetBtn').addEventListener('click', () => {
       form.reset();
       clearErrors();
     });
   </script>
 </body>
+
 </html>
